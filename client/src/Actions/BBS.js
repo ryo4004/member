@@ -1,11 +1,12 @@
 import { replace } from 'react-router-redux'
 import * as request from '../Library/Request'
 import * as lib from '../Library/Library'
+import secrets from 'secrets'
 
 import { showToast } from './Toast'
 
 const prefix = 'BBS_'
-const api = 'Wct5RRmoRwL8mysm4yChUcfkXGcm0fwPJSTrJPqbLGJnFDe9kSQuvPMNKa0rgky9pKukd7mMmZVds3RtimrXZ48UcfiVlvKq699OK662f2uOjP1B99jqJjMCIRrE9QdF'
+const api = secrets.bbs.apiPass
 
 export const getBBSList = () => {
   return async (dispatch, getState) => {
