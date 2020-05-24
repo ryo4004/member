@@ -12,13 +12,17 @@
 - `/server` Webサーバで使用するライブラリ
 - `/app.js` Webサーバ
 
-# 使い方
+# 開発
 
 ## 準備
 
-npmがインストールされている環境でClone後、以下を実行してください。
+npmがインストールされている環境が必要です。  
+また、`winds-nagaoka/secrets`へのSSHでのアクセス権を別途登録してください。  
+sshキーをGitHubの当該リポジトリにて登録後、ローカルで`secrets`というアカウントを作成します。  
+不要な場合は`package.json`から一時的に`dependencies.secrets`を削除してください。  
 
 ```
+# git clone https://github.com/winds-nagaoka/member.git
 # cd member
 # npm i
 ```
